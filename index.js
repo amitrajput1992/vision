@@ -48,7 +48,7 @@ getFiles(__dirname + "/myrius/mech3", series_id, physical_width, physical_height
   console.log(files);
   var fetchArr= [];
   for(var i=0;i<files.length;i++) {
-    var f = fetch('http://vrapi-dev.gmetri.com/vr/v1/legrand/saveModule', {headers: {'Content-Type': 'application/json'}, mode: 'cors', method: 'post', body: JSON.stringify(files[i])})
+    var f = fetch('http://xxxxxxx', {headers: {'Content-Type': 'application/json'}, mode: 'cors', method: 'post', body: JSON.stringify(files[i])})
       .then(function(res) {
         console.log(res);
       })
@@ -66,9 +66,4 @@ getFiles(__dirname + "/myrius/mech3", series_id, physical_width, physical_height
       });
   }
 });
-/**
- * loop through all files and create the payload for api call
- */
-/*for(var i=0;i<files.length;i++) {
 
-}*/
